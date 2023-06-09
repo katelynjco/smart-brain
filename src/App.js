@@ -114,7 +114,7 @@ class App extends Component {
         .then(response => response.json())
         .then(result => {
           if (result) {
-            fetch('http://localhost:3005/image', {
+            fetch('https://git.heroku.com/smart-brain-katelynjco.git/image', {
               method: 'put',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
